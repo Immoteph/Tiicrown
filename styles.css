@@ -1,0 +1,352 @@
+*{
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(/gary-scott-YvRTYzkT6Hs-unsplash.jpg);	background-size: cover;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+header{
+    position: fixed;
+    height: 8%;
+    width: 100%;
+    background-color: #002f4d;
+    top: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 10;
+   
+}
+
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.navbar a{
+    
+    text-decoration: none;
+    color: white;
+        
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    bottom: 9px;
+    left: 88%;
+    transform: translateX(-50%);
+    width: 25%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #00bfff, transparent);
+}
+
+.navbar a:hover{
+    color: #fc6868;
+    text-shadow: 0px 5px 50px red;
+}
+
+.navbar li{
+    display: inline-block;
+    margin: 1.4rem;
+    font-size: 1.5rem;
+    
+}
+
+ul {
+    text-align: right;
+          
+}
+
+#logo{
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    z-index: 100;
+    text-align: center;
+    background-color: white;
+    top: 0.3rem;
+    left: 0.3rem;
+
+}
+
+#platzhalter-logo{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25%;   
+    color: black;
+
+}
+
+#tii{
+    position: absolute;
+    text-align: center;
+    left: 45%;
+    font-size: 50px;
+    margin: auto;
+    padding: auto;
+    padding-top: 0.3rem;
+    color: white;
+}
+
+
+#ueber-mich{
+    display:block ;
+    position: relative;
+    top: 250px;
+    max-width: 50%;
+    font-size: 2rem;
+    top: 5rem;
+}
+
+#werdegang{
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    top: 5rem;
+    text-align: center;
+}
+#werdegang p{
+    max-width: 50%;
+    text-align: left;
+}
+
+.kontakt{
+    display:block ;
+    position: relative;
+    top: 250px;
+    font-size: 3rem;
+    top: 5rem;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 2.5em;
+    background: linear-gradient(to right, rgba(0, 40, 80, 0.3), rgba(0, 0, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(0, 191, 255, 0.2); /* Sternen-Glitzer */
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #00bfff, transparent); /* Blaue Nebel-Linie */
+}
+
+h2{
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.788), 0 0 20px rgba(0, 191, 255, 0.7), 2px 0 10px black;
+}
+
+
+.contact-container {
+            width: 30%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #002f4d; /* Dunkler Hintergrund für Kontrast */
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #e2e2e2;
+            font-size: 1.3rem;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #fff; /* Weißer Text für Lesbarkeit */
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #ccc;
+            color: black;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-row .form-group {
+            width: 48%;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        form button {
+            background-color: hwb(211 54% 0% / 0.877);
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .image-button {
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            height: 2.5rem;
+            width: 5rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            background-color: hwb(211 54% 0% / 0.877)
+            
+        }
+        .image-button img {
+            width: 100%; /* Anpassbare Größe */
+            height: 80%;
+            transition: transform 0.3s; /* Subtiler Hover-Effekt */
+        }
+
+
+        .image-button img:hover {
+            transform: scale(1.1); /* Vergrößerung beim Überfahren */
+        }
+
+        .socials {
+            display: flex;
+            gap: 5rem; /* Abstand zwischen Buttons */
+            margin-bottom: 4px;
+}
+
+        .impressum {
+            margin: 0;
+            padding-top: 2px;
+        }
+        .copyright {
+            font-size: 0.8em;
+            color: #cccccc;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 9%; /* Erhöht für mehr Inhalt */
+            background: #002f4d;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 0;
+            
+        }
+
+        main {
+            flex: 1;
+            padding: 70px 20px 100px 20px; /* Platz für Header und Footer */
+        
+        }
+
+       #medien{
+    display:block ;
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+
+        }
+
+        .media-player{
+            display: inline-block;
+            padding-left: 30px;
+            position: relative;
+            left: 285px;
+       
+        }
+
+        #about{
+    display:block ;
+    position: relative;
+    top: 250px;
+    font-size: 3rem;
+    top: 5rem;
+    text-align: center;
+        }
+
+        .social-banner{             
+            width: 50px;
+            height: 40px;
+            
+        }
+
+        #youtube-icon{
+            filter: invert(11%) sepia(97%) saturate(6614%) hue-rotate(360deg) brightness(101%) contrast(106%);;
+            padding-top: 0;
+        }
+
+        #twitch-icon{
+            filter: invert(78%) sepia(35%) saturate(7451%) hue-rotate(225deg) brightness(99%) contrast(104%);
+            width: 45px;
+            padding-top: 5px;
+        }
+
+        #discord-icon{
+            filter: invert(57%) sepia(31%) saturate(1194%) hue-rotate(194deg) brightness(93%) contrast(82%);
+            padding-top: 5px;
+        }
+
+        #ueber-mich a{
+            text-decoration: none;
+        }
+
+        .about-link-twitch{
+            color: #6441a5
+        }
+
+        .about-link-x{
+        color: #00acee;
+        }
+
+        .about-link-yt{
+        color: red;
+        }
+
+        .about-link-twitch:hover{
+        text-shadow: 0px 5px 50px #6441a5;
+        }
+
+        .about-link-x:hover{
+        text-shadow: 0px 5px 50px #00acee;
+        }
+
+        .about-link-yt:hover{
+        text-shadow: 0px 5px 50px red;
+        }
+        
